@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CarsDetailsActivity">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:contentDescription="Back to Home"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toTopOf="@id/svCarDetail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Die Cast Details"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/svCarDetail"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintLeft_toRightOf="@id/back_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <ScrollView
+        android:id="@+id/svCarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back_button"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgBestSellerCar"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="14dp"
+                android:text="Name"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txtBestSellerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:text="Baby Babushka"
+                android:textSize="22sp"
+                android:textColor="@color/orange"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="14dp"
+                android:text="Brand"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txtBestSellerBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:text="XL (50cm x 85cm x 100cm)"
+                android:textSize="22sp"
+                android:textColor="@color/orange"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="14dp"
+                android:text="Price"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txtBestSellerPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:text="Rp250.000,00"
+                android:textSize="22sp"
+                android:textColor="@color/orange"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="14dp"
+                android:text="Description"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txtBestSellerDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginBottom="125dp"
+                android:text="Sleek diecast model of the Nissan Stagea in a striking silver chrome finish"
+                android:textSize="22sp"
+                android:textColor="@color/orange"/>
+        </LinearLayout>
+
+    </ScrollView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/lighter_grey"
+        >
+
+        <ImageButton
+            android:id="@+id/removebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:contentDescription="Remove Doll"
+            android:src="@drawable/baseline_remove_24"
+            />
+        <EditText
+            android:id="@+id/etBuyCar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="72dp"
+            android:hint="1"
+            android:textAlignment="center"
+            android:backgroundTint="@color/transparent"
+            />
+        <ImageButton
+            android:id="@+id/addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:contentDescription="Add Doll"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="125dp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:src="@drawable/baseline_add_24"
+            />
+        <Button
+            android:id="@+id/buybtn"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="20dp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Buy Car"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

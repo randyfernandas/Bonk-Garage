@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835035011702",
+    "project_id": "bonkgarage-f0ab2",
+    "storage_bucket": "bonkgarage-f0ab2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835035011702:android:016e33b236aa2fecde1d57",
+        "android_client_info": {
+          "package_name": "com.example.bonkgarage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "blocked for privacy"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
